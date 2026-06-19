@@ -1,0 +1,172 @@
+.settingsPage {
+  display: flex;
+  height: 100%;
+  background: var(--bg-color);
+  color: white;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sidebar {
+  width: 260px;
+  border-right: 1px solid var(--glass-border);
+  padding: 32px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.title {
+  padding: 0 32px 24px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  padding: 12px 32px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  text-align: left;
+  font-size: 14px;
+  cursor: default;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+  }
+
+  &.active {
+    background: rgba(124, 255, 196, 0.1);
+    color: var(--accent-color);
+    border-left: 4px solid var(--accent-color);
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 60px 80px;
+  max-width: 900px;
+  overflow-y: auto;
+  
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--glass-border);
+    border-radius: 4px;
+  }
+}
+
+.section {
+  margin-bottom: 56px;
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 12px;
+  }
+}
+
+.settingGroup {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    max-width: 400px;
+    background: #1a1d23;
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.2s;
+
+    &:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 10px rgba(124, 255, 196, 0.1);
+    }
+  }
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: default;
+  color: var(--text-primary) !important;
+
+  input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent-color);
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dangerBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: rgba(232, 17, 35, 0.1);
+  color: #e81123;
+  border: 1px solid rgba(232, 17, 35, 0.2);
+  border-radius: 8px;
+  font-size: 14px;
+  width: fit-content;
+  cursor: default;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(232, 17, 35, 0.2);
+  }
+}
+
+.resetBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  font-size: 14px;
+  width: fit-content;
+  cursor: default;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "common": {
+    "search_placeholder": "Поиск или адрес",
+    "new_tab": "Новая вкладка",
+    "settings": "Настройки",
+    "history": "История",
+    "bookmarks": "Закладки",
+    "downloads": "Загрузки",
+    "help": "Справка",
+    "exit": "Выход"
+  },
+  "home": {
+    "search_the_web": "Поиск в Интернете",
+    "frequently_visited": "Часто посещаемые",
+    "recent_activity": "Недавняя активность"
+  },
+  "settings": {
+    "general": "Основные",
+    "appearance": "Внешний вид",
+    "search": "Поиск",
+    "privacy": "Приватность",
+    "languages": "Языки",
+    "advanced": "Дополнительно",
+    "updates": "Обновления"
+  },
+  "menu": {
+    "new_window": "Новое окно",
+    "private_window": "Новое приватное окно",
+    "extensions": "Расширения"
+  },
+  "bambooAccount": "Аккаунт Bamboo",
+  "login": "Войти",
+  "register": "Регистрация",
+  "logout": "Выйти",
+  "email": "Электронная почта",
+  "password": "Пароль",
+  "displayName": "Отображаемое имя",
+  "switchToLogin": "Уже есть аккаунт? Войти",
+  "switchToRegister": "Нет аккаунта? Зарегистрироваться",
+  "continueWithGoogle": "Продолжить с Google",
+  "sync": "Синхронизация",
+  "syncNow": "Синхронизировать сейчас",
+  "syncSettings": "Настройки синхронизации",
+  "enableSync": "Включить синхронизацию",
+  "syncBookmarks": "Синхронизация закладок",
+  "syncTabs": "Синхронизация вкладок",
+  "lastSync": "Последняя синхронизация",
+  "connectedProviders": "Подключенные сервисы",
+  "accountStatus": "Статус аккаунта",
+  "user": "Пользователь",
+  "loginError": "Ошибка входа. Проверьте ваши данные.",
+  "googleOAuthUnavailable": "Google OAuth в данный момент недоступен.",
+  "loading": "Загрузка..."
+}

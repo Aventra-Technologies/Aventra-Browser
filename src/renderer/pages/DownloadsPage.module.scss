@@ -1,0 +1,122 @@
+.downloadsPage {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  color: white;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.header {
+  margin-bottom: 40px;
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-color);
+  }
+}
+
+.fileIconBox {
+  width: 64px;
+  height: 64px;
+  background: #1a1d23;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.details {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.progressContainer {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-color);
+  transition: width 0.3s;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+
+  button {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1d23;
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    border-radius: 12px;
+    transition: all 0.2s;
+
+    &:hover:not(:disabled) {
+      background: rgba(124, 255, 196, 0.1);
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+}
+
+.empty {
+  text-align: center;
+  padding: 60px;
+  color: var(--text-secondary);
+  font-size: 16px;
+}

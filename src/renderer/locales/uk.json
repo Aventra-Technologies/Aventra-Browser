@@ -1,0 +1,54 @@
+{
+  "common": {
+    "search_placeholder": "Пошук або адреса",
+    "new_tab": "Нова вкладка",
+    "settings": "Налаштування",
+    "history": "Історія",
+    "bookmarks": "Закладки",
+    "downloads": "Завантаження",
+    "help": "Довідка",
+    "exit": "Вихід"
+  },
+  "home": {
+    "search_the_web": "Пошук в Інтернеті",
+    "frequently_visited": "Часто відвідувані",
+    "recent_activity": "Недавня активність"
+  },
+  "settings": {
+    "general": "Основні",
+    "appearance": "Зовнішній вигляд",
+    "search": "Пошук",
+    "privacy": "Приватність",
+    "languages": "Мови",
+    "advanced": "Додатково",
+    "updates": "Оновлення"
+  },
+  "menu": {
+    "new_window": "Нове вікно",
+    "private_window": "Нове приватне вікно",
+    "extensions": "Розширення"
+  },
+  "bambooAccount": "Акаунт Bamboo",
+  "login": "Увійти",
+  "register": "Реєстрація",
+  "logout": "Вийти",
+  "email": "Електронна пошта",
+  "password": "Пароль",
+  "displayName": "Відображуване ім'я",
+  "switchToLogin": "Вже є акаунт? Увійти",
+  "switchToRegister": "Немає акаунту? Зареєструватися",
+  "continueWithGoogle": "Продовжити з Google",
+  "sync": "Синхронізація",
+  "syncNow": "Синхронізувати зараз",
+  "syncSettings": "Налаштування синхронізації",
+  "enableSync": "Увімкнути синхронізацію",
+  "syncBookmarks": "Синхронізація закладок",
+  "syncTabs": "Синхронізація вкладок",
+  "lastSync": "Остання синхронізація",
+  "connectedProviders": "Підключені сервіси",
+  "accountStatus": "Статус акаунту",
+  "user": "Користувач",
+  "loginError": "Помилка входу. Перевірте ваші дані.",
+  "googleOAuthUnavailable": "Google OAuth наразі недоступний.",
+  "loading": "Завантаження..."
+}

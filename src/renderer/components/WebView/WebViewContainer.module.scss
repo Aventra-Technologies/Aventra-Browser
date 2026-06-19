@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: var(--bg-color);
+}
+
+.tabContent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.webview {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+
+  &.active {
+    z-index: 1;
+  }
+}

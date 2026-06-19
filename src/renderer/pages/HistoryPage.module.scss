@@ -1,0 +1,147 @@
+.historyPage {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  color: white;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #1a1d23;
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 0 12px;
+  width: 300px;
+
+  input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    outline: none;
+  }
+}
+
+.clearBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  background: rgba(232, 17, 35, 0.1);
+  color: #e81123;
+  border: 1px solid rgba(232, 17, 35, 0.2);
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: default;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(232, 17, 35, 0.2);
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  cursor: default;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-color);
+  }
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.favicon {
+  width: 24px;
+  height: 24px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.url {
+  font-size: 13px;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.time {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0 20px;
+}
+
+.openBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 8px;
+  border-radius: 6px;
+  &:hover {
+    background: rgba(124, 255, 196, 0.1);
+    color: var(--accent-color);
+  }
+}
+
+.empty {
+  text-align: center;
+  padding: 60px;
+  color: var(--text-secondary);
+  font-size: 16px;
+}

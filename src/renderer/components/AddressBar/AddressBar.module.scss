@@ -1,0 +1,325 @@
+.addressBar {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  background: var(--surface-color);
+  position: relative;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  transition: all 0.2s;
+
+  &:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  &:disabled {
+    color: var(--text-secondary);
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
+
+.urlInputContainer {
+  flex: 1;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  padding: 0 14px;
+  transition: all 0.15s ease-in-out;
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+
+  &:focus-within {
+    background: var(--bg-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(124, 255, 196, 0.25);
+  }
+}
+
+.suggestionsContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #1a1d23;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  margin-top: 8px;
+  padding: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  backdrop-filter: var(--glass-blur);
+}
+
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: default;
+  transition: background 0.1s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.suggestionIcon {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.suggestionTitle {
+  font-size: 14px;
+  color: var(--text-primary);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suggestionUrl {
+  font-size: 12px;
+  color: var(--accent-color);
+  opacity: 0.6;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.securityIndicator {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  color: var(--text-secondary);
+  opacity: 0.5;
+
+  &.secure {
+    color: var(--accent-color);
+    opacity: 1;
+  }
+}
+
+.urlInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+  width: 100%;
+}
+
+.actionBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+  }
+}
+
+.menuBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  border-radius: 8px;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.zoomIndicator {
+  background: rgba(124, 255, 196, 0.15);
+  border: 1px solid rgba(124, 255, 196, 0.3);
+  color: var(--accent-color);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(124, 255, 196, 0.3);
+    cursor: default;
+  }
+}
+
+.googleServicesDropdown {
+  position: absolute;
+  top: 100%;
+  right: 12px;
+  background: rgba(15, 20, 30, 0.96);
+  border: 1px solid rgba(124, 255, 196, 0.18);
+  border-radius: 16px;
+  margin-top: 8px;
+  padding: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 1px rgba(124, 255, 196, 0.15);
+  z-index: 10000;
+  backdrop-filter: blur(20px);
+  width: 360px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: dropdownFadeIn 120ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.googleServicesHeader {
+  font-family: var(--font-display, inherit);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 8px;
+}
+
+.googleServicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.googleServicesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  padding: 12px 6px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  outline: none;
+
+  &:hover, &.focused {
+    background: rgba(124, 255, 196, 0.12);
+    border-color: rgba(124, 255, 196, 0.15);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+
+    .googleServicesIconWrapper {
+      background: rgba(124, 255, 196, 0.08);
+      box-shadow: 0 4px 12px rgba(124, 255, 196, 0.15);
+      transform: scale(1.05);
+    }
+  }
+}
+
+.googleServicesIconWrapper {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.googleServicesFavicon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.googleServicesTitle {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+// Light theme support
+:global([data-theme='light']) {
+  .googleServicesDropdown {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+
+  .googleServicesHeader {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .googleServicesItem {
+    color: #475569;
+
+    &:hover, &.focused {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+
+      .googleServicesIconWrapper {
+        background: rgba(16, 185, 129, 0.08);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+      }
+    }
+  }
+
+  .googleServicesIconWrapper {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}

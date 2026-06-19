@@ -1,0 +1,33 @@
+.titleBar {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  -webkit-app-region: no-drag;
+}
+
+.controls {
+  display: flex;
+  height: 100%;
+}
+
+.controlBtn {
+  width: 46px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  transition: background 0.2s;
+  cursor: default;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.closeBtn:hover {
+  background: #e81123 !important;
+}

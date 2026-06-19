@@ -1,0 +1,54 @@
+{
+  "common": {
+    "search_placeholder": "Search or enter address",
+    "new_tab": "New Tab",
+    "settings": "Settings",
+    "history": "History",
+    "bookmarks": "Bookmarks",
+    "downloads": "Downloads",
+    "help": "Help",
+    "exit": "Exit"
+  },
+  "home": {
+    "search_the_web": "Search the web",
+    "frequently_visited": "Frequently Visited",
+    "recent_activity": "Recent Activity"
+  },
+  "settings": {
+    "general": "General",
+    "appearance": "Appearance",
+    "search": "Search",
+    "privacy": "Privacy",
+    "languages": "Languages",
+    "advanced": "Advanced",
+    "updates": "Updates"
+  },
+  "menu": {
+    "new_window": "New Window",
+    "private_window": "New Private Window",
+    "extensions": "Extensions"
+  },
+  "bambooAccount": "Bamboo Account",
+  "login": "Log In",
+  "register": "Register",
+  "logout": "Log Out",
+  "email": "Email",
+  "password": "Password",
+  "displayName": "Display Name",
+  "switchToLogin": "Already have an account? Log In",
+  "switchToRegister": "Need an account? Register",
+  "continueWithGoogle": "Continue with Google",
+  "sync": "Sync",
+  "syncNow": "Sync Now",
+  "syncSettings": "Sync Settings",
+  "enableSync": "Enable Synchronization",
+  "syncBookmarks": "Sync Bookmarks",
+  "syncTabs": "Sync Open Tabs",
+  "lastSync": "Last sync time",
+  "connectedProviders": "Connected providers",
+  "accountStatus": "Account Status",
+  "user": "User",
+  "loginError": "Login failed. Please check your credentials.",
+  "googleOAuthUnavailable": "Google OAuth is currently unavailable.",
+  "loading": "Loading..."
+}

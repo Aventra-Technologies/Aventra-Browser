@@ -1,0 +1,29 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+.topBar {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--glass-border);
+  z-index: 100;
+}
+
+.titleTabsRow {
+  display: flex;
+  align-items: stretch;
+  background: var(--bg-color);
+  -webkit-app-region: drag;
+}
+
+.mainContent {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}

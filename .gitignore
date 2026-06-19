@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+dist-electron/
+build/
+release/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Electron
+*.asar
+
+# Cache
+.cache/
+.parcel-cache/
+.vite/
+.eslintcache
+
+# Coverage
+coverage/
+
+# Temporary
+tmp/
+temp/
+
+# OTA Updates
+updates/
+downloads/
+
+# Certificates
+*.pem
+*.key
+*.crt
+*.p12
+
+# Secrets
+secrets.json
+config.local.json
+
+# Release artifacts
+*.zip
+*.exe
+*.msi
+latest.json
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
